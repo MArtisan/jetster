@@ -1,28 +1,4 @@
 <div>
-<div class="d-flex h-100 text-center text-white bg-dark">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-<div data-aos="fade-down-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Modern Edge Mktg</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" href="{{ URL('/home') }}">Home</a>
-        <a class="nav-link" href="{{ URL('/splash') }}">Splash</a>
-        <a class="nav-link active" aria-current="page" href="{{ URL('/blog') }}">Blog</a>
-        <a class="nav-link" href="{{ URL('/style') }}">Build</a>
-        <a class="nav-link" href="{{ URL('/features') }}">Features</a>
-        <a class="nav-link" href="{{ URL('/menus') }}">Menus</a>
-        <a class="nav-link" href="{{ URL('/headers') }}">Headers</a>
-        <a class="nav-link" href="{{ URL('/footers') }}">Footers</a>
-        <a class="nav-link" href="{{ URL('/welcome') }}">Welcome</a>
-        <a class="nav-link" href="{{ URL('/') }}">Checkout</a>
-      </nav>
-    </div>
-  </header>
-</div>
-</div>
-</div>
 
 <div class="container">
   <header class="blog-header py-3">
