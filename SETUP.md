@@ -17,3 +17,10 @@ npm install && npm run dev
 php artisan migrate
 
 php artisan vendor:publish --tag=jetstream-views
+
+php artisan make:livewire counter
+
+This will generate the following two files:
+- app\Http\Livewire\Counter.php
+- resources\views\livewirecounter.blade.php
+
