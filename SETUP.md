@@ -95,21 +95,19 @@ php artisan make:livewire BlogComponent
     }
 ```
 
+_____________________________________________
 
+# Revert Git 
 
-git rm public/media/Creator-Token-Marquee.mp4
+git reset --soft HEAD~1
 
-git rm public/media/*
+git status
+
+git rm public/media/* -f
 
 --cached
 
-
-
-
-public/media/ME_ispeaking.mp4
-public/media/Creator-Token-Marquee.mp4
-
-
+git commit -m "" -a
 
 
 

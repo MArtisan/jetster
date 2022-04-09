@@ -1,3 +1,4 @@
+<div>
 <div class="d-flex h-100 text-center text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
@@ -61,29 +62,65 @@
 
 <main class="container">
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+<div class="row">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+      <h1 class="display-4 fst-italic">ADHD Looks Different In Adults</h1>
+          <div class="mb-1 text-muted">Here are 4 signs to watch for</div>
+      <p class="lead my-3">Many people with attention deficit hyperactivity disorder (ADHD) may not receive a diagnosis until adulthood. Adult symptoms can look a little different to those of childhood.</p>
+      <p class="lead mb-0"><a target="_blank" href="https://theconversation.com/adhd-looks-different-in-adults-here-are-4-signs-to-watch-for-178639" class="text-white fw-bold">Continue reading...</a></p>
     </div>
+
+        <div class="col-md-6 d-lg-block text-center">
+          <img class="img-responsive img-thumbnail" src="{{ URL('images/whelmed-over-little.png') }}" alt="">
+        </div>
+
   </div>
+</div>
 
   <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
+    <div class="col-md-4" style="max-width:362px;">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-550 position-relative">
+        <div class="col d-flex flex-column position-static" style="max-width:315px;margin:12px auto;">
+
+          <h3 class="mb-0">Bruce Willis Diagnosis In Spotlight</h3>
+          <div class="mb-1 text-muted">Frustrating, little-known disorder in spotlight after aphasia diagnosis</div>
+
+        <div class="col-auto d-lg-block text-center">
+          <img src="{{ URL('images/willis.png') }}" width="298" height="150" alt="">
         </div>
+
+          <strong class="d-inline-block mb-2 text-primary">latimes.com</strong>
+
+          <p class="card-text mb-auto text-overflow">The aphasia community hopes Bruce Willis’ diagnosis will help reduce the stigma of invisible illnesses and lead to better understanding of a frustrating...</p>
+          <a target="_blank" href="https://www.latimes.com/california/story/2022-04-01/bruce-willis-what-is-aphasia-symptoms-diagnosis-severity-treatment-caregivers" class="stretched-link">Continue reading</a>
+        </div>
+
       </div>
     </div>
+
+    <div class="col-md-4" style="max-width:362px;">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+        <div class="col d-flex flex-column position-static" style="max-width:315px;margin:12px auto;">
+
+          <h3 class="mb-0">ADHD: What Can Be Done</h3>
+          <div class="mb-1 text-muted">Tips on the best approach</div>
+
+        <div class="col-auto d-lg-block text-center">
+          <img src="{{ URL('images/LSAT.png') }}" width="298" height="150" alt="">
+        </div>
+
+          <strong class="d-inline-block mb-2 text-primary">theconversation.com</strong>
+
+          <p class="card-text mb-auto text-overflow">Researchers have found that the best approach is from behavior therapy, especially with kids.<br>
+
+Many years of research says best work as hard as is necessary to build skills...</p>
+          <a target="_blank" href="https://theconversation.com/what-causes-adhd-and-can-it-be-cured-170179" class="stretched-link">Continue reading</a>
+        </div>
+
+      </div>
+    </div>
+
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
@@ -274,3 +311,4 @@
     <a href="#">Back to top</a>
   </p>
 </footer>
+</div>
