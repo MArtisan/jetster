@@ -86,17 +86,28 @@ _______________________________________________
 - Test123!
 
 
+php artisan make:livewire BlogComponent
+
+```
+    public function render()
+    {
+        return view('livewire.blog-component')->layout('livewire.layouts.base'); 
+    }
+```
+
+
+
+git rm public/media/Creator-Token-Marquee.mp4
+
+git rm public/media/*
+
+--cached
 
 
 
 
-
-
-
-
-
-
-
+public/media/ME_ispeaking.mp4
+public/media/Creator-Token-Marquee.mp4
 
 
 
