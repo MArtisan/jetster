@@ -16,10 +16,16 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{ URL('/home') }}" class="nav-link">Home</a>
+        <a href="{{ URL('/dashboard') }}" class="nav-link">Dashboard</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="{{ URL('/blog') }}" class="nav-link">Blog</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{ URL('/') }}" class="nav-link">home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{ URL('/player') }}" class="nav-link">Player</a>
       </li>
     </ul>
 

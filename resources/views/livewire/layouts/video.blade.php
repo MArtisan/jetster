@@ -60,22 +60,16 @@
     <div>
       <h3 class="float-md-start mb-0">Modern Edge Mktg</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" href="{{ URL('/home') }}">Home</a>
-        <a class="nav-link" href="{{ URL('/splash') }}">Splash</a>
-        <a class="nav-link active" aria-current="page" href="{{ URL('/blog') }}">Blog</a>
-        <a class="nav-link" href="{{ URL('/style') }}">Build</a>
-        <a class="nav-link" href="{{ URL('/features') }}">Features</a>
-        <a class="nav-link" href="{{ URL('/menus') }}">Menus</a>
-        <a class="nav-link" href="{{ URL('/headers') }}">Headers</a>
-        <a class="nav-link" href="{{ URL('/footers') }}">Footers</a>
-        <a class="nav-link" href="{{ URL('/welcome') }}">Welcome</a>
-        <a class="nav-link" href="{{ URL('/') }}">Checkout</a>
-      </nav>
+        <a class="nav-link" href="{{ URL('/') }}">Home</a>
+        <a class="nav-link" href="{{ URL('/blog') }}">Blog</a>
+        <a class="nav-link active" aria-current="page" href="{{ URL('/player') }}">Player</a>
+      
 
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        <a href="{{ url('/admin') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Admin</a>
                     @else
                         <a href="{{ route('login') }}" class="px-3 btn btn-sm btn-outline-secondary text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
@@ -85,7 +79,7 @@
                     @endauth
                 </div>
             @endif
-
+</nav>
     </div>
   </header>
 </div>
