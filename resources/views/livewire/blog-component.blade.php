@@ -46,7 +46,7 @@
       <p class="lead mb-0"><a target="_blank" href="https://theconversation.com/adhd-looks-different-in-adults-here-are-4-signs-to-watch-for-178639" class="text-white fw-bold">Continue reading...</a></p>
     </div>
 
-        <div class="col-md-6 d-lg-block text-center">
+        <div class="col-md-6 text-center">
           <img class="img-responsive img-thumbnail" src="{{ URL('images/whelmed-over-little.png') }}" alt="">
         </div>
 
