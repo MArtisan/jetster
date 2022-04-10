@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jetster Blog</title>
+    <title>Jetster Video</title>
 
 {{-- Bootstrap Styles --}}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="/css/blog.css" rel="stylesheet" />
-  <link href="/css/aos.css" rel="stylesheet" />
+
+  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+
+    <script src="/js/ytplayer.js"></script>
 
 <!--
   <link href="/css/carousel.css" rel="stylesheet" />
@@ -20,7 +23,6 @@
   <link href="/css/headers.css" rel="stylesheet" />
 
   <link href="/css/aos-async.css" rel="stylesheet" />
-  <link href="/js/ytplayer.js" rel="stylesheet" />
 -->
 
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
@@ -54,19 +56,14 @@
 <div class="d-flex h-100 text-center text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-<div data-aos="fade-down-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Modern Edge Mktg</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-
-        <a class="nav-link active" aria-current="page" href="{{ URL('/blog') }}">Blog</a>
-
         <a class="nav-link" href="{{ URL('/') }}">Home</a>
-        <a class="nav-link" href="{{ URL('/video') }}">Video</a>
-        <a class="nav-link" href="{{ URL('/player') }}">Player</a>
-
-      </nav>
+        <a class="nav-link" href="{{ URL('/blog') }}">Blog</a>
+        <a class="nav-link active" aria-current="page" href="{{ URL('/player') }}">Player</a>
+      
 
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -82,10 +79,9 @@
                     @endauth
                 </div>
             @endif
-
+</nav>
     </div>
   </header>
-</div>
 </div>
 </div>
 
@@ -96,8 +92,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
-    <script src="/js/aos.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/vj.js"></script>
+<script src="//cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
 
 <!--
 

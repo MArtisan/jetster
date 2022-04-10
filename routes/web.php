@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\BlogComponent;
+use App\Http\Livewire\VideoComponent;
+use App\Http\Livewire\PlayerComponent;
+use App\Http\Livewire\AdminComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +21,18 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', BlogComponent::class);
+Route::get('/blog', BlogComponent::class);
+Route::get('/', VideoComponent::class);
+Route::get('/player', PlayerComponent::class);
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
+
+    Route::get('/admin', AdminComponent::class);
+
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
